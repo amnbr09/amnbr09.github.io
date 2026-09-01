@@ -1,100 +1,809 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            background: #fff;
-            border-radius: 5px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amrita Raghunath — Machine Learning Researcher | Computer Vision &amp; Accessibility AI</title>
+  <meta name="description" content="Amrita Raghunath — ML Researcher specializing in continuous sign language recognition (ISL), multimodal sequence modeling, and accessibility AI. Contributor to IEEE Access 2025." />
+  <meta name="keywords" content="Amrita Raghunath, Machine Learning, Computer Vision, Sign Language Recognition, Indian Sign Language, ISL, MediaPipe, PyTorch, Deep Learning, Accessibility AI, NLP" />
+  <meta name="author" content="Amrita Raghunath" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Amrita Raghunath — Machine Learning Researcher" />
+  <meta property="og:description" content="Multimodal deep learning systems for real-time sign language recognition, computer vision, and accessibility AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amnbr09.github.io" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Welcome to My Website</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+
+  <!-- Ambient Glowing Mesh Layers -->
+  <div class="bg-ambient-layer">
+    <div class="bg-ambient-mesh"></div>
+    <div class="bg-ambient-mesh-2"></div>
+  </div>
+
+  <!-- Interactive Neural Network & Synaptic Flow Physics Canvas (Background Layer) -->
+  <div class="neural-canvas-container">
+    <canvas id="neural-canvas"></canvas>
+  </div>
+
+  <!-- =========================================================================
+       Navigation Header (Sticky Glassmorphism)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#overview" class="brand-logo" aria-label="Amrita Raghunath">
+        <div class="logo-badge">AR</div>
+        <div class="brand-title">
+          <span class="brand-name">Amrita Raghunath</span>
+          <span class="brand-sub">ML RESEARCH</span>
         </div>
-    </header>
-    <section class="container">
-        <img src="profile-pic.jpeg" alt="Profile Picture" class="profile-pic">
-        <h2>Research Interests</h2>
-        <p>Dummy text for research interests. You can add more details here about your research work and areas of interest.</p>
-        <h2>Professional Experience</h2>
-        <p>Dummy text for professional experience. You can add more details here about your work experience and professional background.</p>
-        <h2>Other Interests</h2>
-        <p>Dummy text for other interests. You can add more details here about your hobbies and other personal interests.</p>
-    </section>
-    <footer>
-        <p>© 2025 Your Name. All rights reserved.</p>
-    </footer>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#overview" class="nav-link active">Overview</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Interactive Neural Spike Wave Trigger -->
+        <button class="neural-pulse-btn" id="neural-wave-btn" title="Fire Synaptic Signal Wave">
+          <span class="pulse-icon">⚡</span>
+          <span>Synaptic Pulse</span>
+        </button>
+
+        <a href="assets/Amrita_Raghunath_Resume.pdf" class="btn btn-secondary btn-sm" download="Amrita_Raghunath_Resume.pdf">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>CV / Résumé</span>
+        </a>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="btn-icon theme-toggle" id="theme-toggle-btn" aria-label="Toggle theme mode" title="Switch Theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="nav-toggle-btn" id="nav-toggle-btn" aria-label="Open mobile navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Section 1: Overview & Bento Grid (Starts directly here)
+       ========================================================================= -->
+  <section class="section section-top-overview" id="overview">
+    <div class="container">
+      <div class="bento-grid">
+        
+        <!-- 1. Hero Intro Bento Card (Span-8) -->
+        <article class="bento-card card-intro-hero span-8">
+          <div class="bento-card-content">
+            <div class="status-badge">
+              <span class="live-dot"></span>
+              <span>Open to Research / PhD Positions &amp; ML Roles</span>
+            </div>
+
+            <h1 class="hero-main-title">
+              Amrita Raghunath <br />
+              <span class="gradient-text">Machine Learning Researcher</span>
+            </h1>
+
+            <p class="hero-lead-text">
+              I specialize in <strong>computer vision, multimodal sequence modeling, and real-time sign language recognition (ISL)</strong>. With 6+ years of ML research experience, I build continuous gesture recognition pipelines, deep learning architectures (CNN-Transformers, Conformers), and government-deployed accessibility AI.
+            </p>
+
+            <div class="hero-actions-row">
+              <a href="#research" class="btn btn-primary">
+                <span>View IEEE Publication</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <span>Explore 8 Projects</span>
+              </a>
+              <a href="assets/Amrita_Raghunath_Resume.pdf" class="btn btn-secondary" download="Amrita_Raghunath_Resume.pdf">
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <div class="hero-social-links">
+              <a href="https://github.com/amnbr09" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.67-4.57 4.92.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                <span>github.com/amnbr09</span>
+              </a>
+              <span>·</span>
+              <a href="https://www.linkedin.com/in/amrita-raghunath-b744a0153/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-3.2c0-1.5 1-2.3 2.2-2.3S16 11.3 16 12.8V16"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <span>·</span>
+              <a href="mailto:amritamaanikoth@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                <span>amritamaanikoth@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Profile Bento Card (Span-4) -->
+        <article class="bento-card card-profile span-4">
+          <div class="bento-card-content">
+            <div class="profile-avatar-wrapper">
+              <img src="assets/amrita-profile.jpg" alt="Amrita Raghunath" class="profile-avatar-img" />
+              <div class="profile-status-ring" title="Active"></div>
+            </div>
+
+            <h2 class="profile-name">Amrita Raghunath</h2>
+            <p class="profile-role">Computer Vision &amp; Sequence Modeling</p>
+            <span class="profile-loc">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Kannur, Kerala, India
+            </span>
+
+            <div style="display: flex; gap: 10px; justify-content: center; width: 100%; margin-top: auto;">
+              <a href="#contact" class="btn btn-primary btn-sm" style="flex: 1;">Get in Touch</a>
+              <a href="assets/Amrita_Raghunath_Resume.pdf" class="btn btn-secondary btn-sm" download style="flex: 1;">Download CV</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Featured Publication Bento Card (Span-7) -->
+        <article class="bento-card card-featured-pub span-7">
+          <div class="bento-card-content">
+            <div class="pub-tag-row">
+              <span class="pub-journal-badge">Featured Publication · IEEE Access (2025)</span>
+              <span class="pub-doi">doi: 10.1109/ACCESS.2025.3554618</span>
+            </div>
+
+            <h3 class="pub-title">
+              Toward Real-Time Recognition of Continuous Indian Sign Language: A Multi-Modal Approach Using RGB and Pose
+            </h3>
+
+            <p class="pub-authors">
+              M. Geetha, N. Aloysius, D. A. Somasundaran, <strong>Amritha Raghunath</strong>, and P. Nedungadi
+            </p>
+
+            <!-- Metrics Strip -->
+            <div class="metrics-strip">
+              <div class="metric-item">
+                <span class="metric-value">19</span>
+                <span class="metric-label">Word Error Rate</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">6 FPS</span>
+                <span class="metric-label">Dynamic Downsample</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">3D+TF</span>
+                <span class="metric-label">CNN &amp; Transformer</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">CTC</span>
+                <span class="metric-label">Sequence Loss</span>
+              </div>
+            </div>
+
+            <p class="pub-abstract">
+              Introduces <strong>SignFlow</strong>, a continuous sign language recognition network optimized for real-time ISL. Fuses isolated-video pre-trained 3D CNNs with MediaPipe pose Transformers to bridge communication barriers for ~18 million Deaf individuals in India, deployed for the UMANG eRaktkosh chatbot.
+            </p>
+
+            <div class="pub-actions-row">
+              <a href="https://doi.org/10.1109/ACCESS.2025.3554618" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>View on IEEE Access</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <button class="btn btn-secondary btn-sm" id="copy-bibtex-btn">Copy BibTeX</button>
+              <button class="btn btn-secondary btn-sm" id="toggle-bibtex-btn">View BibTeX</button>
+            </div>
+
+            <!-- Hidden / Expandable BibTeX snippet -->
+            <pre class="bibtex-box" id="bibtex-content" style="display: none;">@article{geetha2025signflow,
+  title   = {Toward Real-Time Recognition of Continuous Indian Sign Language: A Multi-Modal Approach Using RGB and Pose},
+  author  = {Geetha, M. and Aloysius, Neena and Somasundaran, Darshik A. and Raghunath, Amritha and Nedungadi, Prema},
+  journal = {IEEE Access},
+  volume  = {13},
+  pages   = {60270--60283},
+  year    = {2025},
+  doi     = {10.1109/ACCESS.2025.3554618}
+}</pre>
+          </div>
+        </article>
+
+        <!-- 4. Active Research Scoping (Span-5) -->
+        <article class="bento-card span-5">
+          <div class="bento-card-content">
+            <span class="section-tag" style="margin-bottom: 8px;">Active Research Direction</span>
+            <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 10px; color: var(--text-primary);">
+              Sequence-to-Text Decoding Beyond Visual Signals
+            </h3>
+            <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+              Investigating sequence-to-text decoding frameworks informed by recent brain-to-text and non-visual signal architectures, generalizing multimodal RGB/pose pipelines toward edge-efficient and gloss-free continuous sign language translation with MLLMs.
+            </p>
+            <span class="project-timeline">Mar 2024 — Present · Independent Research</span>
+          </div>
+        </article>
+
+        <!-- 5. Research Numbers & Impact (Span-6) -->
+        <article class="bento-card span-6">
+          <div class="bento-card-content">
+            <span class="section-tag" style="margin-bottom: 8px;">By The Numbers</span>
+            <div class="stats-grid" style="margin-top: 6px;">
+              <div class="stat-box">
+                <div class="stat-num">6<span>+</span></div>
+                <div class="stat-lbl">Years in ML R&amp;D</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">1</div>
+                <div class="stat-lbl">IEEE Access Paper</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">8</div>
+                <div class="stat-lbl">Research Projects</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">18<span>M</span></div>
+                <div class="stat-lbl">Community Reach</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Core Tech Stack & Frameworks (Span-6) -->
+        <article class="bento-card span-6">
+          <div class="bento-card-content">
+            <span class="section-tag" style="margin-bottom: 8px;">Technical Stack</span>
+            <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 10px; color: var(--text-primary);">
+              Frameworks, Models &amp; Infrastructure
+            </h3>
+            <div class="tech-pill-container">
+              <span class="tech-pill"><span class="dot"></span>PyTorch</span>
+              <span class="tech-pill"><span class="dot"></span>MediaPipe</span>
+              <span class="tech-pill"><span class="dot"></span>Transformers</span>
+              <span class="tech-pill"><span class="dot"></span>CTC Loss</span>
+              <span class="tech-pill"><span class="dot"></span>OpenCV</span>
+              <span class="tech-pill"><span class="dot"></span>Conformer</span>
+              <span class="tech-pill"><span class="dot"></span>HuggingFace</span>
+              <span class="tech-pill"><span class="dot"></span>YOLO</span>
+              <span class="tech-pill"><span class="dot"></span>Docker</span>
+              <span class="tech-pill"><span class="dot"></span>AWS</span>
+              <span class="tech-pill"><span class="dot"></span>PostgreSQL</span>
+              <span class="tech-pill"><span class="dot"></span>LaTeX</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 2: Research & Publications
+       ========================================================================= -->
+  <section class="section" id="research">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Peer-Reviewed Science</span>
+        <h2 class="section-title">Research &amp; Publications</h2>
+        <p class="section-desc">
+          Published breakthroughs in multi-modal gesture recognition, dynamic temporal downsampling, and public-service deployment.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- SignFlow Full Feature Article (Span-8) -->
+        <article class="bento-card span-8">
+          <div class="bento-card-content">
+            <div class="pub-tag-row">
+              <span class="pub-journal-badge">IEEE Access · Volume 13 · pp. 60270–60283 (2025)</span>
+            </div>
+
+            <h3 style="font-size: 22px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.35;">
+              Toward Real-Time Recognition of Continuous Indian Sign Language: A Multi-Modal Approach Using RGB and Pose
+            </h3>
+
+            <p class="pub-authors">
+              M. Geetha, N. Aloysius, D. A. Somasundaran, <strong>Amritha Raghunath</strong>, and P. Nedungadi
+            </p>
+
+            <div class="pub-abstract" style="margin-bottom: 20px;">
+              <p>
+                <strong>Methodology &amp; Architecture:</strong> Continuous sign language recognition has historically suffered from computational latency, signer variability, and rapid co-articulation. <em>SignFlow</em> addresses this through a dual-stream architecture:
+              </p>
+              <ul style="list-style: none; margin: 12px 0; padding-left: 0;">
+                <li style="margin-bottom: 6px; font-size: 14px; color: var(--text-secondary);">
+                  <strong style="color: var(--accent-light);">▸ Dual-Stream Pretraining:</strong> Isolated ISL videos pretrain a 3D CNN, while MediaPipe pose landmarks pretrain a Transformer encoder.
+                </li>
+                <li style="margin-bottom: 6px; font-size: 14px; color: var(--text-secondary);">
+                  <strong style="color: var(--accent-light);">▸ Dynamic Downsampling:</strong> Temporally reduces video inputs to 6 fps, eliminating redundant frames while retaining critical linguistic transitions.
+                </li>
+                <li style="margin-bottom: 6px; font-size: 14px; color: var(--text-secondary);">
+                  <strong style="color: var(--accent-light);">▸ Alignment &amp; Loss:</strong> Connectionist Temporal Classification (CTC) loss eliminates the need for expensive frame-level gloss annotations.
+                </li>
+              </ul>
+            </div>
+
+            <div class="pub-actions-row">
+              <a href="https://doi.org/10.1109/ACCESS.2025.3554618" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Access Full Paper via IEEE Xplore</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <button class="btn btn-secondary btn-sm" data-copy="10.1109/ACCESS.2025.3554618">Copy DOI</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Outreach & Dissemination Card (Span-4) -->
+        <article class="bento-card span-4">
+          <div class="bento-card-content">
+            <span class="section-tag" style="margin-bottom: 8px;">Dissemination &amp; Outreach</span>
+            <h3 style="font-size: 19px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px;">
+              ISL Accessibility Workshop · CDAC Trivandrum (2023)
+            </h3>
+            <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+              Delivered a hands-on workshop in collaboration with the <strong>Centre for Development of Advanced Computing (CDAC)</strong>, demonstrating the government-funded ISL continuous sign recognition chatbot directly to Deaf community members and accessibility stakeholders.
+            </p>
+            <div class="pub-journal-badge" style="width: fit-content;">Government Deployed · UMANG eRaktkosh</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 3: Projects Portfolio
+       ========================================================================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag">Research &amp; Engineering Portfolio</span>
+        <h2 class="section-title">Selected Research Projects</h2>
+        <p class="section-desc">
+          8 projects spanning continuous sign language recognition, transformer architectures, low-resource NMT, and computer vision.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects (8)</button>
+        <button class="filter-btn" data-filter="sign-language">Sign Language &amp; CV (4)</button>
+        <button class="filter-btn" data-filter="nlp">NLP &amp; Translation (2)</button>
+        <button class="filter-btn" data-filter="accessibility">Accessibility AI (2)</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="sign-language">
+          <div class="project-card-content">
+            <div class="project-header">
+              <span class="project-timeline">Apr 2024 – Mar 2025</span>
+              <span class="project-category-badge">CV &amp; Sign</span>
+            </div>
+            <h3 class="project-title">Real-Time Recognition of Continuous ISL</h3>
+            <p class="project-desc">
+              Culminating research project establishing a continuous sign language recognition pipeline combining 3D CNNs and Transformers with dynamic frame sampling.
+            </p>
+            <ul class="project-bullet-list">
+              <li>Published in IEEE Access (2025) as the SignFlow architecture</li>
+              <li>Achieved Word Error Rate of 19 with real-time inference latency</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">PyTorch</span>
+              <span class="project-tag">MediaPipe</span>
+              <span class="project-tag">CTC Loss</span>
+              <span class="project-tag">Transformer</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="sign-language">
+          <div class="project-card-content">
+            <div class="project-header">
+              <span class="project-timeline">Dec 2023 – Mar 2024</span>
+              <span class="project-category-badge">Deep Learning</span>
+            </div>
+            <h3 class="project-title">Continuous SLR with Conformer Architecture</h3>
+            <p class="project-desc">
+              Enhanced continuous gesture modeling by implementing Conformer architectures combining convolution and self-attention mechanisms in PyTorch.
+            </p>
+            <ul class="project-bullet-list">
+              <li>Integrated depthwise convolutions to capture local gesture dynamics</li>
+              <li>Rigorous hyperparameter optimization across WER and detection rate</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">Conformer</span>
+              <span class="project-tag">PyTorch</span>
+              <span class="project-tag">Attention</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="nlp">
+          <div class="project-card-content">
+            <div class="project-header">
+              <span class="project-timeline">Jun 2023 – Dec 2023</span>
+              <span class="project-category-badge">NLP</span>
+            </div>
+            <h3 class="project-title">FAQ Retrieval Module for ISL Query Handling</h3>
+            <p class="project-desc">
+              Semantic retrieval module mapping continuous sign language queries to structured institutional FAQs for public service chatbots.
+            </p>
+            <ul class="project-bullet-list">
+              <li>Benchmarked clustering algorithms for robust intent clustering</li>
+              <li>Engineered custom query-to-answer semantic mapping algorithms</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">NLP</span>
+              <span class="project-tag">Clustering</span>
+              <span class="project-tag">Semantic Search</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="accessibility">
+          <div class="project-card-content">
+            <div class="project-header">
+              <span class="project-timeline">May 2022 – May 2023</span>
+              <span class="project-category-badge">Accessibility</span>
+            </div>
+            <h3 class="project-title">Government-Funded ISL Accessibility Chatbot</h3>
+            <p class="project-desc">
+              Production accessibility chatbot translating real-time Indian Sign Language video inputs into natural language queries for public services.
+            </p>
+            <ul class="project-bullet-list">
+              <li>Isolated-to-continuous transfer learning pipeline</li>
+              <li>MediaPipe &amp; OpenCV data augmentation robust to diverse signers</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">CNN-Transformer</span>
+              <span class="project-tag">Public Deployment</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="sign-language">
+          <div class="project-card-content">
+            <div class="project-header">
+              <span class="project-timeline">Jan 2022 – Apr 2022</span>
+              <span class="project-category-badge">Dataset &amp; CV</span>
+            </div>
+            <h3 class="project-title">Benchmark Dataset for Static ISL Recognition</h3>
+            <p class="project-desc">
+              Curated, segmented, and validated a comprehensive static Indian Sign Language dataset covering complete alphabets and digits 0–9.
+            </p>
+            <ul class="project-bullet-list">
+              <li>Engineered MediaPipe hand crop and segmentation pipelines</li>
+              <li>Benchmarked VGG and ResNet classifiers in PyTorch</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">PyTorch</span>
+              <span class="project-tag">VGG / ResNet</span>
+              <span class="project-tag">Data Engineering</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" data-category="accessibility">
+          <div class="project-card-content">
+            <div class="project-header">
+              <span class="project-timeline">Jan 2021 – Aug 2021</span>
+              <span class="project-category-badge">Accessibility</span>
+            </div>
+            <h3 class="project-title">Scene Description for the Visually Impaired</h3>
+            <p class="project-desc">
+              Image captioning model integrating visual-semantic feature representations to assist visually impaired individuals in scene understanding.
+            </p>
+            <ul class="project-bullet-list">
+              <li>Extracted object features with Faster-RCNN and BERT embeddings</li>
+              <li>Decoded natural language descriptions via LSTM &amp; Transformers</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">Faster-RCNN</span>
+              <span class="project-tag">BERT</span>
+              <span class="project-tag">Image Captioning</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card" data-category="sign-language">
+          <div class="project-card-content">
+            <div class="project-header">
+              <span class="project-timeline">Apr 2019 – Jul 2019</span>
+              <span class="project-category-badge">Vision</span>
+            </div>
+            <h3 class="project-title">Real-Time Face Detection for Crowd Surveillance</h3>
+            <p class="project-desc">
+              Robust face detection and localization system for high-density CCTV footage in public security applications.
+            </p>
+            <ul class="project-bullet-list">
+              <li>Trained YOLO-based object detection models</li>
+              <li>Instance segmentation and preprocessing with PixelLib and OpenCV</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">YOLO</span>
+              <span class="project-tag">PixelLib</span>
+              <span class="project-tag">OpenCV</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="project-card" data-category="nlp">
+          <div class="project-card-content">
+            <div class="project-header">
+              <span class="project-timeline">Dec 2018 – Apr 2019</span>
+              <span class="project-category-badge">NLP</span>
+            </div>
+            <h3 class="project-title">Unsupervised NMT for Mizo Low-Resource Language</h3>
+            <p class="project-desc">
+              Semi-supervised neural machine translation model translating low-resource Mizo language without parallel bilingual corpora.
+            </p>
+            <ul class="project-bullet-list">
+              <li>Automated monolingual corpus harvesting with Selenium web crawlers</li>
+              <li>Trained cross-lingual FastText, GloVe, and MUSE word embeddings</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">BERT</span>
+              <span class="project-tag">LSTM</span>
+              <span class="project-tag">MUSE</span>
+              <span class="project-tag">Low-Resource NLP</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 4: Experience & Education Timeline
+       ========================================================================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag">Career &amp; Academic Milestones</span>
+        <h2 class="section-title">Experience &amp; Education</h2>
+        <p class="section-desc">
+          Chronological journey through research labs, academic achievements, and engineering roles.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Item 1: Independent Researcher -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Mar 2024 — Present</div>
+            <h3 class="timeline-role">Independent Researcher</h3>
+            <div class="timeline-org">Self-Directed · Kerala, India</div>
+            <div class="timeline-body">
+              <ul>
+                <li>Finalized and published the <em>SignFlow</em> paper in <strong>IEEE Access (2025)</strong>.</li>
+                <li>Scoping novel research directions in sequence-to-text decoding from non-visual signal sources (brain-to-text / EEG inspired architectures).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: ML Engineer at CREATE -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jan 2022 — Mar 2024</div>
+            <h3 class="timeline-role">Machine Learning Engineer</h3>
+            <div class="timeline-org">Amrita Center for Research in Analytics, Technologies &amp; Education (CREATE)</div>
+            <div class="timeline-body">
+              <ul>
+                <li>Led continuous ISL recognition research in PyTorch using Conformer and CNN-Transformer architectures.</li>
+                <li>Engineered FAQ semantic retrieval module for the government-funded ISL accessibility chatbot.</li>
+                <li>Constructed benchmark static ISL dataset with MediaPipe/OpenCV pipelines.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Research Associate -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Mar 2021 — Nov 2021</div>
+            <h3 class="timeline-role">Research Associate</h3>
+            <div class="timeline-org">Amrita Centre for Cyber Security Systems and Networks, Kollam</div>
+            <div class="timeline-body">
+              <ul>
+                <li>Researched accessibility vision systems and image captioning for visually impaired users.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Junior Research Fellow -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Dec 2018 — Jul 2019</div>
+            <h3 class="timeline-role">Junior Research Fellow</h3>
+            <div class="timeline-org">Amrita Centre for Cyber Security Systems and Networks, Kollam</div>
+            <div class="timeline-body">
+              <ul>
+                <li>Developed unsupervised Neural Machine Translation for Mizo low-resource language (BERT + LSTM).</li>
+                <li>Automated large-scale web corpus scraping with Selenium and trained MUSE multilingual embeddings.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: MTech AI -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jun 2019 — May 2021</div>
+            <h3 class="timeline-role">Master of Technology (MTech), Artificial Intelligence</h3>
+            <div class="timeline-org">Amrita Vishwa Vidyapeetham, Kollam, India · <strong>CGPA: 8.51 / 10</strong></div>
+            <div class="timeline-body">
+              <p>Thesis Advisor: Prof. Geetha M · Focus: Advanced Machine Learning Algorithms &amp; Pattern Recognition.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: BTech CS + Germany Exchange -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2014 — 2018</div>
+            <h3 class="timeline-role">Bachelor of Technology (BTech), Computer Science</h3>
+            <div class="timeline-org">Amrita Vishwa Vidyapeetham, Kollam, India · <strong>CGPA: 8.53 / 10</strong></div>
+            <div class="timeline-body">
+              <p><strong>International Exchange Semester (2018):</strong> University of Paderborn, Germany (Thesis Advisor: Prof. Holger Karl).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 5: Contact & Résumé
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">
+          Interested in discussing PhD opportunities, research collaborations, or ML engineering roles? Reach out via email or connect on LinkedIn.
+        </p>
+      </div>
+
+      <div class="contact-grid-container">
+        <div class="contact-card-list">
+          <!-- Email Row -->
+          <div class="contact-row-item">
+            <div class="contact-row-left">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </div>
+              <div class="contact-row-details">
+                <span class="contact-label">Email</span>
+                <span class="contact-val">amritamaanikoth@gmail.com</span>
+              </div>
+            </div>
+            <button class="copy-pill-btn" data-copy="amritamaanikoth@gmail.com">Copy Email</button>
+          </div>
+
+          <!-- Phone Row -->
+          <div class="contact-row-item">
+            <div class="contact-row-left">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </div>
+              <div class="contact-row-details">
+                <span class="contact-label">Phone</span>
+                <span class="contact-val">+91 85474 09105</span>
+              </div>
+            </div>
+            <button class="copy-pill-btn" data-copy="+918547409105">Copy Phone</button>
+          </div>
+
+          <!-- LinkedIn Row -->
+          <div class="contact-row-item">
+            <div class="contact-row-left">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-3.2c0-1.5 1-2.3 2.2-2.3S16 11.3 16 12.8V16"/></svg>
+              </div>
+              <div class="contact-row-details">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-val">in/amrita-raghunath</span>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/in/amrita-raghunath-b744a0153/" target="_blank" rel="noopener" class="copy-pill-btn">Open Profile ↗</a>
+          </div>
+
+          <!-- GitHub Row -->
+          <div class="contact-row-item">
+            <div class="contact-row-left">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.67-4.57 4.92.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              </div>
+              <div class="contact-row-details">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-val">github.com/amnbr09</span>
+              </div>
+            </div>
+            <a href="https://github.com/amnbr09" target="_blank" rel="noopener" class="copy-pill-btn">Open GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- Résumé Download Card -->
+        <aside class="resume-download-card">
+          <span class="section-tag" style="margin-bottom: 12px; width: fit-content;">Curriculum Vitae</span>
+          <h3>Download Academic Résumé</h3>
+          <p>
+            Two-page research &amp; PhD-optimized résumé covering the 2025 IEEE Access publication, continuous ISL recognition architectures, JRF achievements, and academic record.
+          </p>
+          <a href="assets/Amrita_Raghunath_Resume.pdf" class="btn btn-primary" download="Amrita_Raghunath_Resume.pdf" style="width: fit-content;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download PDF Résumé</span>
+          </a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Toast Notification Banner
+       ========================================================================= -->
+  <div class="toast-container">
+    <div id="toast-banner" class="toast-msg">
+      <span class="toast-dot"></span>
+      <span id="toast-text">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© 2026 Amrita Raghunath · Machine Learning Researcher</p>
+        <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+          Built with HTML5, CSS3, Antigravity Confetti Physics &amp; Bento Grid. Hosted on GitHub Pages.
+        </p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#overview">Back to Top ↑</a></li>
+        <li><a href="mailto:amritamaanikoth@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/amrita-raghunath-b744a0153/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/amnbr09" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Bundle -->
+  <script src="script.js"></script>
 </body>
 </html>
